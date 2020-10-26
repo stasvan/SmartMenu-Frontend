@@ -1,12 +1,10 @@
 import React from 'react';
 import './App.css';
+import RestaurantPage from './components/restaurant-page/restaurant-page';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
+      <RestaurantPage/>
   );
 }
 
