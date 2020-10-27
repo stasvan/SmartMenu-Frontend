@@ -1,0 +1,30 @@
+.top-images {
+    position: relative;
+
+    .logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .logo-background {
+        width: 100%;
+    }
+}
+
+.content {
+    padding: 20px;
+
+    .general-info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu-control-pannel {
+        display: flex;
+
+        .menu-select, .language-select {
+            width: 50%;
+        }
+    }
+}

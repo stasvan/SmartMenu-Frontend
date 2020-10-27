@@ -1,0 +1,9 @@
+.section-tabs {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    .section-tab {
+        width: 80px;
+    }
+}
