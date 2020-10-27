@@ -8,13 +8,13 @@ import './dishes-list.scss';
 const DishesList = ({ dishesList }) => (
   <div className="dishes-list">
     {
-        dishesList
-          .map((item) => (
-            <DishListItem
-              dish={item}
-            />
-          ))
-        }
+      dishesList
+        .map((item) => (
+          <DishListItem
+            dish={item}
+          />
+        ))
+    }
   </div>
 );
 
