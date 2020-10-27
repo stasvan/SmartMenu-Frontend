@@ -1,29 +1,31 @@
-import React, {Component} from 'react';
-import DishListItem from '../dish-list-item/dish-list-item'
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import DishListItem from '../dish-list-item/dish-list-item';
+
 import './dishes-list.scss';
 
-class DishesList extends Component{
-
-    render () {
-        let {dishesList} = this.props;
-
-        if (!dishesList) {
-            return (<div></div>)
+function DishesList({ dishesList }) {
+  return (
+    <div className="dishes-list">
+      {
+        dishesList
+          .map((item) => (
+            <DishListItem
+              dish={item}
+            />
+          ))
         }
-
-        return (
-            <div className="dishes-list">
-                {
-                    dishesList
-                        .map(item =>
-                            <DishListItem 
-                                dish={item}
-                            />
-                        )
-                }
-            </div>
-        )
-    }
+    </div>
+  );
 }
+
+DishesList.propTypes = {
+  dishesList: PropTypes.arrayOf(PropTypes.object),
+};
+
+DishesList.defaultProps = {
+  dishesList: [],
+};
 
 export default DishesList;

@@ -1,10 +1,12 @@
 import React from 'react';
-import './App.css';
+
 import RestaurantPage from './components/restaurant-page/restaurant-page';
+
+import './App.css';
 
 function App() {
   return (
-      <RestaurantPage/>
+    <RestaurantPage />
   );
 }
 
