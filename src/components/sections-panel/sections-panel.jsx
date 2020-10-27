@@ -8,7 +8,7 @@ import DishesList from '../dishes-list/dishes-list';
 
 import './sections-panel.scss';
 
-function SectionsPanel({ sections }) {
+const SectionsPanel = ({ sections }) => {
   if (!sections) {
     return (<div />);
   }
@@ -38,7 +38,7 @@ function SectionsPanel({ sections }) {
       {tabPanels}
     </Tabs>
   );
-}
+};
 
 SectionsPanel.propTypes = {
   sections: PropTypes.arrayOf(PropTypes.object),

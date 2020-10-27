@@ -6,7 +6,7 @@ import RestaurantFetchService from '../../services/restaurant-fetch-service';
 
 import './restaurant-page.scss';
 
-function RestaurantPage() {
+const RestaurantPage = () => {
   const [restaurant, setRestaurant] = useState({});
   const [selectedMenu, setSelectedMenu] = useState({});
 
@@ -98,6 +98,6 @@ function RestaurantPage() {
       </div>
     </>
   );
-}
+};
 
 export default RestaurantPage;

@@ -4,10 +4,8 @@ import RestaurantPage from './components/restaurant-page/restaurant-page';
 
 import './App.css';
 
-function App() {
-  return (
-    <RestaurantPage />
-  );
-}
+const App = () => (
+  <RestaurantPage />
+);
 
 export default App;

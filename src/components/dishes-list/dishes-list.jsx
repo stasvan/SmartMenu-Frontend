@@ -5,10 +5,9 @@ import DishListItem from '../dish-list-item/dish-list-item';
 
 import './dishes-list.scss';
 
-function DishesList({ dishesList }) {
-  return (
-    <div className="dishes-list">
-      {
+const DishesList = ({ dishesList }) => (
+  <div className="dishes-list">
+    {
         dishesList
           .map((item) => (
             <DishListItem
@@ -16,9 +15,8 @@ function DishesList({ dishesList }) {
             />
           ))
         }
-    </div>
-  );
-}
+  </div>
+);
 
 DishesList.propTypes = {
   dishesList: PropTypes.arrayOf(PropTypes.object),
