@@ -10,7 +10,7 @@ import './sections-panel.scss';
 
 const SectionsPanel = ({ sections }) => {
   if (!sections) {
-    return (<div />);
+    return (<></>);
   }
 
   const tabs = [];

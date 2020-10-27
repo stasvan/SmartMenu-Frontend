@@ -26,7 +26,7 @@ const RestaurantPage = () => {
   };
 
   if (!restaurant) {
-    return (<div />);
+    return (<></>);
   }
 
   const menus = restaurant.menus
