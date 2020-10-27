@@ -19,7 +19,11 @@ const DishesList = ({ dishesList }) => (
 );
 
 DishesList.propTypes = {
-  dishesList: PropTypes.arrayOf(PropTypes.object),
+  dishesList: PropTypes.arrayOf(PropTypes.shape({
+    name: PropTypes.string,
+    portion: PropTypes.string,
+    price: PropTypes.string,
+  })),
 };
 
 DishesList.defaultProps = {

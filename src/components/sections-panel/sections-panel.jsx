@@ -15,6 +15,7 @@ const SectionsPanel = ({ sections }) => {
 
   const tabs = [];
   const tabPanels = [];
+
   sections.forEach((section) => {
     tabs.push(
       <Tab className="section-tab">
